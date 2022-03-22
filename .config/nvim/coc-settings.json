@@ -26,5 +26,9 @@
     "typescriptreact",
     "html"
   ],
-  "codeLens.enable": true
+  "codeLens.enable": true,
+  "suggest.enablePreview": true,
+  "coc.preferences.hoverTarget": "float",
+  "diagnostic.enableMessage": "always",
+  "suggest.floatEnable": true
 }

@@ -9,6 +9,7 @@ call plug#begin()
     " Theme
     Plug 'morhetz/gruvbox'
     Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+    Plug 'sonph/onehalf', { 'rtp': 'vim' }
     "Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
 
     " Utilities
@@ -18,6 +19,11 @@ call plug#begin()
     Plug 'preservim/nerdtree'
     Plug 'scrooloose/nerdcommenter'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    "Plug 'ncm2/float-preview.nvim'
+    "Plug 'rmagatti/goto-preview'
+    Plug 'jose-elias-alvarez/null-ls.nvim'
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'williamboman/nvim-lsp-installer'
 
     " Telescope
     Plug 'nvim-lua/popup.nvim'
@@ -33,6 +39,4 @@ call plug#begin()
     " Git
     Plug 'airblade/vim-gitgutter'
     Plug 'kdheepak/lazygit.nvim'
-
-    "hello world v2
 call plug#end()

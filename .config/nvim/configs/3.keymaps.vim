@@ -21,8 +21,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader> gc <Plug>(coc-codeaction)
 nmap <leader> gn <Plug>(coc-rename)
+nmap <silent> <C-h> <Plug>(coc-diagnostic-info)
 nmap <leader> qf <Plug>(coc-fix-current)
-
 nmap ac :CocAction<CR>
 
 " ============================ "
@@ -67,7 +67,7 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Move statement up and down with [Alt + k, j]
 " ============================ "
 " Move 1 more lines up or down in normal and visual selection modes.
-nnoremap J :m .+1<CR>==
 nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
 vnoremap K :m '<-2<CR>gv=gv
 vnoremap J :m '>+1<CR>gv=gv
