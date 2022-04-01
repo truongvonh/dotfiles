@@ -1,15 +1,17 @@
 call plug#begin()
     " Appearance
-    Plug 'vim-airline/vim-airline'
+    Plug 'windwp/windline.nvim'
+
+    Plug 'akinsho/bufferline.nvim'
     Plug 'ryanoasis/vim-devicons'
     Plug 'elvessousa/sobrio'
-    Plug 'glepnir/dashboard-nvim'
+    "Plug 'mhinz/vim-startify'
     Plug 'lukas-reineke/indent-blankline.nvim'
 
     " Theme
     Plug 'morhetz/gruvbox'
-    Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
-    "Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
+    Plug 'navarasu/onedark.nvim'
+    Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
 
     " Utilities
     Plug 'sheerun/vim-polyglot'
@@ -18,6 +20,10 @@ call plug#begin()
     Plug 'preservim/nerdtree'
     Plug 'scrooloose/nerdcommenter'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'jose-elias-alvarez/null-ls.nvim'
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'kamykn/spelunker.vim'
+    Plug 'williamboman/nvim-lsp-installer'
 
     " Telescope
     Plug 'nvim-lua/popup.nvim'
@@ -29,10 +35,14 @@ call plug#begin()
     " Completion / linters / formatters
     Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'yarn install'}
     Plug 'plasticboy/vim-markdown'
+    Plug 'neoclide/coc-jest'
 
     " Git
-    Plug 'airblade/vim-gitgutter'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'lewis6991/gitsigns.nvim'
     Plug 'kdheepak/lazygit.nvim'
 
-    "hello world v2
+    "Other
+    Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+
 call plug#end()

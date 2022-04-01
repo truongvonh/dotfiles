@@ -19,4 +19,5 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 set t_Co=256
+set encoding=UTF-8
 

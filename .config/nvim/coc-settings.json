@@ -12,7 +12,8 @@
     "typescriptreact",
     "python",
     "lua",
-    "vim"
+    "vim",
+    "spec"
   ],
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "~/.local/bin/black",
@@ -26,5 +27,10 @@
     "typescriptreact",
     "html"
   ],
-  "codeLens.enable": true
+  "codeLens.enable": true,
+  "suggest.enablePreview": true,
+  "coc.preferences.hoverTarget": "float",
+  "diagnostic.enableMessage": "always",
+  "suggest.floatEnable": true,
+  "jest.watch": true
 }
