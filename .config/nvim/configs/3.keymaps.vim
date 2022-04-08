@@ -20,8 +20,10 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+nmap <silent> rn <Plug>(coc-rename)
 nmap <leader> gc <Plug>(coc-codeaction)
-nmap <leader> gn <Plug>(coc-rename)
+"nmap <leader> gn <Plug>(coc-rename)
 nmap <silent> <C-h> <Plug>(coc-diagnostic-info)
 nmap <leader> qf <Plug>(coc-fix-current)
 nmap ac :CocAction<CR>

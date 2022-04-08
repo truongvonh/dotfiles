@@ -21,3 +21,7 @@ set tabstop=2
 set t_Co=256
 set encoding=UTF-8
 
+
+autocmd FileType golang set shiftwidth=4 softtabstop=4 expandtab
+setlocal omnifunc=go#complete#Complete
+

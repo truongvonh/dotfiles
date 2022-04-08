@@ -6,5 +6,4 @@ source ~/.config/nvim/configs/3.keymaps.vim
 source ~/.config/nvim/configs/plugin-configs.bufferline.vim
 source ~/.config/nvim/configs/plugin-configs.windline.vim
 source ~/.config/nvim/configs/plugin-configs.gitgutter.vim
-source ~/.config/nvim/configs/plugin-configs.spelunker.vim
 

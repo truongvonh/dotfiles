@@ -6,6 +6,7 @@ call plug#begin()
     Plug 'ryanoasis/vim-devicons'
     Plug 'elvessousa/sobrio'
     "Plug 'mhinz/vim-startify'
+    Plug 'sunjon/shade.nvim'
     Plug 'lukas-reineke/indent-blankline.nvim'
 
     " Theme
@@ -43,6 +44,5 @@ call plug#begin()
     Plug 'kdheepak/lazygit.nvim'
 
     "Other
-    Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 
 call plug#end()
