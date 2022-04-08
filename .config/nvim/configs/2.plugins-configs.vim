@@ -8,7 +8,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 
 colorscheme onedark
 let g:onedark_config = {
-    \ 'style': 'warmer',
+    \ 'style': 'dark',
 \}
 
 " ============================ "
@@ -90,6 +90,16 @@ lua << EOF
     show_current_context = true,
     show_current_context_start = false,
   }
+
+  require'shade'.setup({
+    overlay_opacity = 50,
+    opacity_step = 1,
+    --keys = {
+    -- brightness_up    = '<C-Up>',
+    --  brightness_down  = '<C-Down>',
+    --  toggle           = '<Leader>s',
+    --}
+  })
 
   require('telescope').load_extension('media_files')
   --  woord
