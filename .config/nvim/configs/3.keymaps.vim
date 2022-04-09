@@ -1,7 +1,14 @@
 map <C-s> :w!<CR>
+nmap zz :q!<CR>
 inoremap jk <ESC>
 " =========================== "
+" VIM test mapping
+" ============================ "
+nmap ts :TestSuite<CR>
+nmap tn :TestNearest<CR>
+nmap tf :TestFile<CR>
 
+" =========================== "
 " Basic mapping
 " ============================ "
 nmap <C-t> :NERDTreeToggle<CR>

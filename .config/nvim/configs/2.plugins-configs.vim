@@ -12,11 +12,9 @@ let g:onedark_config = {
 \}
 
 " ============================ "
-" WebdevIcons configs
+" VIM tests configs
 " ============================ "
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_nerdtree = 1
-let g:webdevicons_enable_airline_tabline = 1
+let test#strategy = "basic"
 
 " ============================ "
 " NERDTreeGitStatus configs
@@ -61,7 +59,7 @@ let g:lazygit_use_neovim_remote = 1 " fallback to 0 if neovim-remote is not inst
 " ============================ "
 " Minimap configs
 " ============================ "
-let g:minimap_auto_start = 1
+let g:minimap_auto_start = 0
 let g:minimap_auto_start_win_enter = 1
 let g:minimap_git_colors = 1
 let g:minimap_close_filetypes = ['netrw', 'vim-plug']
@@ -78,7 +76,6 @@ lua << EOF
   --vim.o.hidden = true
   vim.lsp.util.preview_location = true
 
-  vim.g.tokyonight_style = "night" -- storm | night
   vim.g.tokyonight_italic_functions = true
   vim.g.tokyonight_hide_inactive_statusline = true
   vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal" }
@@ -91,15 +88,6 @@ lua << EOF
     show_current_context_start = false,
   }
 
-  require'shade'.setup({
-    overlay_opacity = 50,
-    opacity_step = 1,
-    --keys = {
-    -- brightness_up    = '<C-Up>',
-    --  brightness_down  = '<C-Down>',
-    --  toggle           = '<Leader>s',
-    --}
-  })
 
   require('telescope').load_extension('media_files')
   --  woord
@@ -196,18 +184,32 @@ lua << EOF
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
     --vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     --vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+
+    vim.diagnostic.config({
+      virtual_text = {
+        source = "always",  -- Or "if_many"
+      },
+      float = {
+        source = "always",  -- Or "if_many"
+      },
+    })
   end
 
   -- Use a loop to conveniently call 'setup' on multiple servers and
   -- map buffer local keybindings when the language server attaches
-  local servers = { 'pyright', 'rust_analyzer', 'tsserver'}
+  local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'eslint', 'quick_lint_js'}
+  local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+  for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+  end
   for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup {
       on_attach = on_attach,
       flags = {
         -- This will be the default in neovim 0.7+
         debounce_text_changes = 150,
-      }
+      },
     }
   end
 EOF

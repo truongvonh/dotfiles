@@ -16,12 +16,12 @@ set autoread
 set nowrap
 
 set expandtab
-set shiftwidth=2
-set tabstop=2
+"set shiftwidth=4
+"set tabstop=4
 set t_Co=256
 set encoding=UTF-8
 
 
-autocmd FileType golang set shiftwidth=4 softtabstop=4 expandtab
-setlocal omnifunc=go#complete#Complete
+"autocmd FileType golang set shiftwidth=4 softtabstop=4 expandtab
+"setlocal omnifunc=go#complete#Complete
 

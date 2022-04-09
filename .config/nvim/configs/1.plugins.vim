@@ -6,7 +6,6 @@ call plug#begin()
     Plug 'ryanoasis/vim-devicons'
     Plug 'elvessousa/sobrio'
     "Plug 'mhinz/vim-startify'
-    Plug 'sunjon/shade.nvim'
     Plug 'lukas-reineke/indent-blankline.nvim'
 
     " Theme
@@ -23,7 +22,6 @@ call plug#begin()
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'jose-elias-alvarez/null-ls.nvim'
     Plug 'neovim/nvim-lspconfig'
-    Plug 'kamykn/spelunker.vim'
     Plug 'williamboman/nvim-lsp-installer'
 
     " Telescope
@@ -43,6 +41,14 @@ call plug#begin()
     Plug 'lewis6991/gitsigns.nvim'
     Plug 'kdheepak/lazygit.nvim'
 
+    "Testing
+    "Plug 'roxma/nvim-yarp'
+    "Plug 'roxma/vim-hug-neovim-rpc'
+
+    Plug 'vim-test/vim-test'
+    "Plug 'rcarriga/vim-ultest', { 'do': ':UpdateRemotePlugins' }
+
     "Other
+    Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
