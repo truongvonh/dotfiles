@@ -6,10 +6,13 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-colorscheme onedark
-let g:onedark_config = {
-    \ 'style': 'dark',
-\}
+
+set termguicolors
+set background=dark
+colorscheme aurora
+"let g:onedark_config = {
+    "\ 'style': 'darker',
+"\}
 
 " ============================ "
 " VIM tests configs
@@ -59,7 +62,7 @@ let g:lazygit_use_neovim_remote = 1 " fallback to 0 if neovim-remote is not inst
 " ============================ "
 " Minimap configs
 " ============================ "
-let g:minimap_auto_start = 0
+let g:minimap_auto_start = 1
 let g:minimap_auto_start_win_enter = 1
 let g:minimap_git_colors = 1
 let g:minimap_close_filetypes = ['netrw', 'vim-plug']

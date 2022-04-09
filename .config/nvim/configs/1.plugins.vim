@@ -10,6 +10,7 @@ call plug#begin()
 
     " Theme
     Plug 'morhetz/gruvbox'
+    Plug 'rafalbromirski/vim-aurora'
     Plug 'navarasu/onedark.nvim'
     Plug 'wfxr/minimap.vim', {'do': ':!cargo install --locked code-minimap'}
 
