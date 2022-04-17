@@ -27,7 +27,7 @@ require('packer').startup({
 		use 'williamboman/nvim-lsp-installer'
 		use 'lewis6991/impatient.nvim'
 		use 'mhinz/vim-startify'
-		use 'windwp/nvim-spectre'
+		--use 'windwp/nvim-spectre'
 		use 'folke/which-key.nvim'
 
 		--" Telescope

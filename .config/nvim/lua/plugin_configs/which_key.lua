@@ -29,6 +29,11 @@ wk.register({
 		--e = { ':DiffviewFocusFiles<CR>', 'Diff View Focus Files' },
 		--h = { ':DiffviewFileHistory<CR>', 'Diff View File History' },
 	},
+	p = {
+		name = 'Packer',
+		i = { '<cmd>PackerInstall<CR>', 'PackerInstall' },
+		r = { '<cmd>PackerClean<CR>', 'PackerClean' },
+	},
 	s = {
 		name = 'Terminal',
 		h = { ':ToggleTerm<CR>', 'Horizontal' },

@@ -2,7 +2,7 @@
 require('plugin_configs.gitgutter')
 require('plugin_configs.windline')
 require('plugin_configs.bufferline')
-require('plugin_configs.nvim_spectre')
+--require('plugin_configs.nvim_spectre')
 require('plugin_configs.vim_notify')
 require('plugin_configs.which_key')
 require('plugin_configs.toggle_term')
