@@ -8,9 +8,13 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=tr_TR.UTF-8
 export BAT_THEME="Dracula"
+#export GOROOT=/opt/homebrew/bin/go
+#export GOPATH=$HOME/go
+#export PATH=$PATH:$GOROOT/bin 
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -114,7 +118,17 @@ source $ZSH/oh-my-zsh.sh
  #alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="colorls"
 alias trn="tmux rename-window"
-alias nn="nvim ."
+alias nn="nvim"
+alias python=/usr/bin/python3
+alias pip="pip3"
+#alias py_install="pip3 install "
+#alias py_load="pip3 "
+
+function py_install() {
+	echo "start install python package" 
+  pip install $1 --target packages
+  pip freeze packages > requirements.txt
+}
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
