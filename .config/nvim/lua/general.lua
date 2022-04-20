@@ -1,4 +1,3 @@
---vim.cmd('colorscheme gruvbox')
 vim.cmd('language en_us')
 
 vim.o.number = true
@@ -16,8 +15,6 @@ vim.o.t_Co = 'a'
 vim.o.mouse = 'a'
 vim.o.encoding = 'UTF-8'
 vim.o.inccommand = 'split'
---vim.o.splitbelow = 'splitright'
---vim.o.winheight = '20'
 vim.o.clipboard = 'unnamedplus'
 vim.o.background = 'dark'
 vim.o.completeopt = 'noinsert,menuone,noselect'

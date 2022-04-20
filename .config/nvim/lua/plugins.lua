@@ -13,7 +13,8 @@ require('packer').startup({
 		use 'morhetz/gruvbox'
 		use 'bluz71/vim-moonfly-colors'
 		use { 'wfxr/minimap.vim', run = ':!cargo install --locked code-minimap' }
-		use 'folke/tokyonight.nvim'
+		use 'norcalli/nvim-colorizer.lua'
+		use 'Mofiqul/dracula.nvim'
 
 		--" Utilities
 		use 'sheerun/vim-polyglot'
@@ -27,7 +28,6 @@ require('packer').startup({
 		use 'williamboman/nvim-lsp-installer'
 		use 'lewis6991/impatient.nvim'
 		use 'mhinz/vim-startify'
-		--use 'windwp/nvim-spectre'
 		use 'folke/which-key.nvim'
 
 		--" Telescope
@@ -52,7 +52,6 @@ require('packer').startup({
 		use 'roxma/nvim-yarp'
 		use 'roxma/vim-hug-neovim-rpc'
 		use 'vim-test/vim-test'
-		use { 'rcarriga/vim-ultest', run = ':UpdateRemotePlugins' }
 
 		--"Other
 		use 'editorconfig/editorconfig-vim'
@@ -62,8 +61,10 @@ require('packer').startup({
 		use { 'ellisonleao/glow.nvim', branch = 'main' }
 		use 'rcarriga/nvim-notify'
 		use 'akinsho/toggleterm.nvim'
+		use 'voldikss/vim-floaterm'
+		use 'szw/vim-g'
 	end,
-	--config = { max_jobs = 10 },
+	config = { max_jobs = 10 },
 })
 
 require('plugin_configs')

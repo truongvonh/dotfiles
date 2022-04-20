@@ -15,11 +15,17 @@ key_map("n", "<C-s>", ":w!<CR>", { silent = true })
 --key_map("n", "zz", "<Cmd>SClose<CR>", { silent = true })
 key_map("n", "zz", "<Cmd>q<CR>", { silent = true })
 key_map("n", "nr", "<Cmd>luafile %<CR>")
+key_map("n", "be", "<Cmd>b#<CR>") --Back to current file
+
+key_map("n", "<A-S-Left>", "<C-W>2<") --Back to current file
+key_map("n", "<A-S-Right>", "<C-W>2>") --Back to current file
+key_map("n", "<A-S-Up>", "<C-W>2+") --Back to current file
+key_map("n", "<A-S-Down>", "<C-W>2-") --Back to current file
 
 --" ============================ "
 --" Telescope mapping
 --" ============================ "
-key_map("n", "ff", ":Telescope find_files<CR>")
+key_map("n", "ff", ":Telescope find_files hidden=true<CR>")
 key_map("n", "fb", ":Telescope buffers<CR>")
 key_map("n", "fg", ":Telescope live_grep<CR>")
 
@@ -88,3 +94,9 @@ key_map("n", "gr", "<Plug>(coc-references)", { silent = true })
 key_map("n", "rn", "<Plug>(coc-rename)", { silent = true })
 key_map("n", "ac", "<Cmd>CocAction<CR>", { silent = true })
 key_map("n", "qf", "<Plug>(coc-fix-current)", { silent = true })
+
+--" ============================ "
+--" Vim test binding
+--" ============================ "
+key_map("n", "tn", "<Cmd>TestNearest<CR>")
+key_map("n", "tf", "<Cmd>TestFile<CR>")

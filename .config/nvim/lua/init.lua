@@ -1,5 +1,5 @@
 require('general')
-require('common')
 require('plugins')
+require('common')
 require('key_maps')
 require('themes')
