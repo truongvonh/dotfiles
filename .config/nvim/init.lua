@@ -6,5 +6,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 _G.__is_log = true
+print('hello world')
 
 require('init')

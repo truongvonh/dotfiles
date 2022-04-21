@@ -8,7 +8,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH,/Applications/Julia-1.7.app/Contents/Resources/julia/bin/:${PATH}"
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=tr_TR.UTF-8
 export BAT_THEME="Dracula"

@@ -28,6 +28,7 @@ wk.register({
 	name = 'Packer',
 	i = { '<cmd>PackerInstall<CR>', 'PackerInstall' },
 	r = { '<cmd>PackerClean<CR>', 'PackerClean' },
+	u = { '<cmd>PackerUpdate<CR>', 'PackerUpdate' },
 }, {
 	prefix = 'P',
 	noremap = true,
