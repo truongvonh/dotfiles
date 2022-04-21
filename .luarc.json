@@ -2,7 +2,10 @@
     "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
     "Lua.diagnostics.globals": [
         "se",
-        "packer"
+        "packer",
+        "state",
+        "filetypes",
+        "find_cmd"
     ],
     "Lua.runtime.version": "LuaJIT",
     "Lua.workspace.checkThirdParty": false,

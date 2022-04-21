@@ -6,7 +6,7 @@
 		"markdown",
 		"html",
 		"json",
-		"javascript",
+		//"javascript",
 		"javascriptreact",
 		"typescript",
 		"typescriptreact",
@@ -27,12 +27,12 @@
 		"typescriptreact",
 		"html"
 	],
-	"codeLens.enable": true,
+	"codeLens.enable": false,
 	"suggest.enablePreview": true,
 	"coc.preferences.hoverTarget": "float",
 	"diagnostic.enableMessage": "always",
 	"suggest.floatEnable": true,
 	"jest.watch": true,
-    "eslint.autoFixOnSave": true,
-	"lua.enable": false
+    "eslint.autoFixOnSave": false,
+	"lua.enable": true
 }

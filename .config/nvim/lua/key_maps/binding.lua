@@ -12,14 +12,20 @@ end
 key_map("n", "j", "<Plug>(accelerated_jk_gj)")
 key_map("n", "k", "<Plug>(accelerated_jk_gk)")
 key_map("n", "<C-s>", ":w!<CR>", { silent = true })
---key_map("n", "zz", "<Cmd>SClose<CR>", { silent = true })
 key_map("n", "zz", "<Cmd>q<CR>", { silent = true })
 key_map("n", "nr", "<Cmd>luafile %<CR>")
+key_map("n", "be", "<Cmd>b#<CR>") --Back to current file
+
+key_map("n", "<A-S-Left>", "<C-W>2<") --Back to current file
+key_map("n", "<A-S-Right>", "<C-W>2>") --Back to current file
+key_map("n", "<A-S-Up>", "<C-W>2+") --Back to current file
+key_map("n", "<A-S-Down>", "<C-W>2-") --Back to current file
+
 
 --" ============================ "
 --" Telescope mapping
 --" ============================ "
-key_map("n", "ff", ":Telescope find_files<CR>")
+key_map("n", "ff", ":Telescope find_files hidden=true<CR>")
 key_map("n", "fb", ":Telescope buffers<CR>")
 key_map("n", "fg", ":Telescope live_grep<CR>")
 
@@ -65,26 +71,19 @@ key_map("n", "mk", "<Cmd>WhichKey<CR>")
 
 
 --" ============================ "
---" Coc mapping
+--" Vim test binding
 --" ============================ "
--- Old mappings
---nmap <silent> gd <Plug>(coc-definition)
---nmap <silent> gy <Plug>(coc-type-definition)
---nmap <silent> gi <Plug>(coc-implementation)
---nmap <silent> gr <Plug>(coc-references)
+key_map("n", "tn", "<Cmd>TestNearest<CR>")
+key_map("n", "tf", "<Cmd>TestFile<CR>")
 
---nmap <silent> rn <Plug>(coc-rename)
---nmap <leader> gc <Plug>(coc-codeaction)
---"nmap <leader> gn <Plug>(coc-rename)
---nmap <silent> <C-h> <Plug>(coc-diagnostic-info)
---nmap <leader> qf <Plug>(coc-fix-current)
---nmap ac :CocAction<CR>
 
-key_map("n", "<C-h>", "<Plug>(coc-diagnostic-info)", { silent = true })
-key_map("n", "gd", "<Plug>(coc-definition)", { silent = true })
-key_map("n", "gi", "<Plug>(coc-implementation)", { silent = true })
-key_map("n", "gy", "<Plug>(coc-type-definition)", { silent = true })
-key_map("n", "gr", "<Plug>(coc-references)", { silent = true })
-key_map("n", "rn", "<Plug>(coc-rename)", { silent = true })
-key_map("n", "ac", "<Cmd>CocAction<CR>", { silent = true })
-key_map("n", "qf", "<Plug>(coc-fix-current)", { silent = true })
+--" ============================ "
+--" LSP config binding
+--" ============================ "
+key_map("n", "gi", "<cmd>lua vim.diagnostic.open_float()<CR>")
+key_map("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>")
+key_map("n", "gd", "<cmd>lua vim.lsp.buf.type_definition()<CR>")
+key_map("n", "rn", "<cmd>lua require('navigator.rename').rename()<CR>")
+key_map("n", "ac", "<cmd>lua require('navigator.codeAction').code_action()<CR>")
+key_map("n", "gr", "<cmd>lua require('navigator.reference').reference()<CR>")
+key_map("n", "Ef", "<Cmd>EslintFixAll<CR>")
