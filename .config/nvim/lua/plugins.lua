@@ -7,6 +7,7 @@ require('packer').startup({
 		use('windwp/windline.nvim')
 		use 'ryanoasis/vim-devicons'
 		use 'lukas-reineke/indent-blankline.nvim'
+		use 'TaDaa/vimade'
 
 		--" Theme
 		use 'morhetz/gruvbox'

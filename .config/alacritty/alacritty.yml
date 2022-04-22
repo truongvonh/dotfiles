@@ -1,7 +1,7 @@
 font:
   normal:
-    family: "MesloLGSDZ Nerd Font"
     #family: "Cousine NF"
+    family: "MesloLGSDZ Nerd Font"
   bold:
     #family: "Cousine NF"
     family: "MesloLGSDZ Nerd Font"

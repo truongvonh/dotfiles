@@ -1,17 +1,3 @@
-vim.g.indent_blankline_filetype_exclude = {
-	"help",
-	"startify",
-	"dashboard",
-	"packer",
-	"neogitstatus",
-	"NvimTree",
-	"neo-tree",
-	"Trouble",
-}
-
-vim.g.startify_session_autoload = 0
-
-
 vim.g.dracula_colors = {
 	bg = "#282A36",
 	--bg = "#383a59",
@@ -43,4 +29,4 @@ vim.g.dracula_lualine_bg_color = "#44475a"
 vim.g.dracula_italic_comment = true
 
 
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme dracula')
