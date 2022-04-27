@@ -7,14 +7,14 @@ require('packer').startup({
 		use('windwp/windline.nvim')
 		use 'ryanoasis/vim-devicons'
 		use 'lukas-reineke/indent-blankline.nvim'
-		use 'TaDaa/vimade'
+		--use 'TaDaa/vimade'
 
 		--" Theme
 		use 'morhetz/gruvbox'
-		use 'bluz71/vim-moonfly-colors'
 		use { 'wfxr/minimap.vim', run = ':!cargo install --locked code-minimap' }
 		use 'norcalli/nvim-colorizer.lua'
-		use 'Mofiqul/dracula.nvim'
+		use 'rmehri01/onenord.nvim'
+		use 'ray-x/starry.nvim'
 
 		--" Utilities
 		use 'sheerun/vim-polyglot'
@@ -81,8 +81,12 @@ require('packer').startup({
 		use 'JuliaEditorSupport/julia-vim'
 		use 'mattn/emmet-vim'
 		use { 'ray-x/navigator.lua', requires = { 'ray-x/guihua.lua', run = 'cd lua/fzy && make' } }
-		use 'nvim-treesitter/nvim-treesitter-refactor'
+		--use 'nvim-treesitter/nvim-treesitter-refactor'
+		use 'simrat39/symbols-outline.nvim'
 
+		--"Debugger
+		use 'mfussenegger/nvim-dap'
+		use 'theHamsta/nvim-dap-virtual-text'
 	end,
 	config = { max_jobs = 10 },
 })

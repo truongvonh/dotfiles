@@ -118,7 +118,7 @@ source $ZSH/oh-my-zsh.sh
  #alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="colorls"
 alias trn="tmux rename-window"
-alias nn="nvim"
+alias nn="nvim --startuptime /tmp/nvim-startuptime"
 alias python=/usr/bin/python3
 alias pip="pip3"
 #alias py_install="pip3 install "

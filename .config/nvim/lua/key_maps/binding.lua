@@ -14,7 +14,7 @@ key_map("n", "k", "<Plug>(accelerated_jk_gk)")
 key_map("n", "<C-s>", ":w!<CR>", { silent = true })
 key_map("n", "zz", "<Cmd>q<CR>", { silent = true })
 key_map("n", "nr", "<Cmd>luafile %<CR>")
-key_map("n", "be", "<Cmd>b#<CR>") --Back to current file
+key_map("n", "Be", "<Cmd>b#<CR>") --Back to current file
 
 key_map("n", "<A-S-Left>", "<C-W>2<") --Back to current file
 key_map("n", "<A-S-Right>", "<C-W>2>") --Back to current file
@@ -87,3 +87,10 @@ key_map("n", "rn", "<cmd>lua require('navigator.rename').rename()<CR>")
 key_map("n", "ac", "<cmd>lua require('navigator.codeAction').code_action()<CR>")
 key_map("n", "gr", "<cmd>lua require('navigator.reference').reference()<CR>")
 key_map("n", "Ef", "<Cmd>EslintFixAll<CR>")
+
+--" ============================ "
+--" Debugger config binding
+--" ============================ "
+key_map("n", "<space>db", "<cmd>lua attach_debugger()<CR>", {silent = true}) --start nvim debugger
+key_map("n", "<space>tp", "<cmd>DapToggleBreakpoint<CR>", {silent = true}) --start nvim debugger
+key_map("n", "<space>lp", "<cmd>lua log_breakpoint_result()<CR>", {silent = true}) --log info of a breakpoint

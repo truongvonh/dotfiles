@@ -11,7 +11,6 @@ vim.g.indent_blankline_filetype_exclude = {
 
 vim.g.startify_session_autoload = 0
 
---require('themes.colorschemes.dracula')
 require('themes.colorschemes.gruvbox')
-
-
+--require('themes.colorschemes.one_nord')
+--require('themes.colorschemes.starry')
