@@ -1,5 +1,6 @@
+require('key_maps')
 require('general')
 require('plugins')
-require('common')
-require('key_maps')
 require('themes')
+require('common')
+require('auto_cmd')

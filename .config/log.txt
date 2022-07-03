@@ -1,0 +1,402 @@
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Error detected while processing function <SNR>120_setHightlighting:
+line   21:
+E421: Color name or number not recognized: ctermfg= ctermbg=NONE gui=NONE guifg= guibg=NONE
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+17 more lines
+20 fewer lines
+17 more lines
+Could not open log file
+
+
+Could not open log file
+
+
+
+
+
+
+
+
+
+
+Could not open log file
+
+"log.txt" 0L, 0B
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+[null-ls] [ERROR 00:30:39] ...t/null-ls.nvim/lua/null-ls/helpers/generator_factory.lua:180: command codespell is not executable (make sure it's installed and on your $PATH)
+[null-ls] [ERROR 00:30:39] ...t/null-ls.nvim/lua/null-ls/helpers/generator_factory.lua:180: command ec is not executable (make sure it's installed and on your $PATH)
+20 fewer lines
+17 more lines
+
+
+20 fewer lines
+17 more lines
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+
+
+Could not open log file
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+20 fewer lines
+17 more lines
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+
+".gitignore" 1L, 5B
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+20 fewer lines
+17 more lines
+Could not open log file
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+Could not open log file
+
+".editorconfig" 15L, 81B
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+                       Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+20 fewer lines
+17 more lines
+Could not open log file
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+
+
+
+
+Could not open log file
+
+
+
+"package.json" 5L, 61B
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+20 fewer lines
+17 more lines
+
+20 fewer lines
+17 more lines
+
+
+
+
+20 fewer lines
+17 more lines
+
+
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+
+
+
+
+Could not open log file
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+20 fewer lines
+17 more lines
+Could not open log file
+
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+
+
+"log.txt" 
+"log.txt" 164L, 3160B
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+20 fewer lines
+17 more lines
+
+20 fewer lines
+17 more lines
+20 fewer lines
+17 more lines
+20 fewer lines
+17 more lines
+20 fewer lines
+17 more lines
+
+20 fewer lines
+17 more lines
+20 fewer lines
+17 more lines
+
+20 fewer lines
+17 more lines
+
+
+
+
+20 fewer lines
+17 more lines
+20 fewer lines
+17 more lines
+
+Could not open log file
+Could not open log file
+Could not open log file-- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT --
+-- INSERT ---- INSERT --
+-- INSERT ---- INSERT --
+-- INSERT --
+-- INSERT --
+-- INSERT ---- INSERT --
+-- INSERT ---- INSERT --
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+"nvim/lua/plugin_configs/navigator.lua" 55L, 2729B
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20 fewer lines
+17 more lines
+
+20 fewer lines
+17 more lines
+Could not open log file
+
+20 fewer lines
+17 more lines
+
+
+
+20 fewer lines
+17 more lines
+Could not open log file
+
+
+
+
+
+
+
+
+
+
+
+20 fewer lines
+17 more lines
+20 fewer lines
+17 more lines
+
+20 fewer lines
+17 more lines
+
+Could not open log file
+
+
+
+
+
+
+20 fewer lines
+17 more lines
+
+Could not open log file
+
+20 fewer lines
+17 more lines
+
+-- INSERT --
+Could not open log file-- INSERT --
+Could not open log file-- INSERT --
+Could not open log file-- INSERT --
+Could not open log file-- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT ---- INSERT --
+Could not open log file-- INSERT --
+Could not open log file-- INSERT --
+
+
+Select a language server:
+1: null-ls
+2: sumneko_lua
+Type number and <Enter> or click with the mouse (q or empty cancels): 1
+                                                                       Select a language server:
+1: null-ls
+2: sumneko_lua
+Type number and <Enter> or click with the mouse (q or empty cancels): 
+"nvim/lua/plugin_configs/navigator.lua" 
+"nvim/lua/plugin_configs/navigator.lua" 55L, 2730B written
+[null-ls] [ERROR 00:31:46] ...t/null-ls.nvim/lua/null-ls/helpers/generator_factory.lua:180: command stylua is not executable (make sure it's installed and on your $PATH)-- VISUAL BLOCK --
+20 fewer lines
+17 more lines-- VISUAL BLOCK --
+20 fewer lines
+17 more lines
+
+E37: No write since last change
+E162: No write since last change for buffer "[No Name]"
+Could not open log file
+20 fewer lines
+17 more lines
+
+E37: No write since last change
+E162: No write since last change for buffer "[No Name]"
+20 fewer lines
+17 more lines
+
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file
+Could not open log file

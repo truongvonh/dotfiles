@@ -1,0 +1,32 @@
+
+2022/07/02 (16:23:31) | ===> btop++ v.1.2.7
+2022/07/02 (16:23:31) | INFO: Logger set to INFO
+2022/07/02 (16:23:32) | INFO: Logger set to DEBUG
+2022/07/02 (16:23:34) | INFO: Logger set to DEBUG
+2022/07/02 (16:43:41) | DEBUG: Writing new config file
+2022/07/02 (16:43:41) | INFO: Quitting! Runtime: 00:22:00
+
+2022/07/02 (16:43:54) | ===> btop++ v.1.2.7
+2022/07/02 (16:43:54) | INFO: Logger set to DEBUG
+2022/07/02 (16:43:54) | DEBUG: Using locale tr_TR.UTF-8
+2022/07/02 (16:43:54) | INFO: Running on /dev/ttys011
+2022/07/02 (16:43:54) | DEBUG: get_sensors(): show_coretemp=1 check_temp=1
+2022/07/02 (16:43:55) | DEBUG: M1 sensors found
+2022/07/02 (23:13:41) | DEBUG: Writing new config file
+2022/07/02 (23:13:41) | INFO: Quitting! Runtime: 06:29:47
+
+2022/07/02 (23:13:47) | ===> btop++ v.1.2.7
+2022/07/02 (23:13:47) | INFO: Logger set to DEBUG
+2022/07/02 (23:13:47) | DEBUG: Using locale tr_TR.UTF-8
+2022/07/02 (23:13:47) | INFO: Running on /dev/ttys011
+2022/07/02 (23:13:47) | DEBUG: get_sensors(): show_coretemp=1 check_temp=1
+2022/07/02 (23:13:47) | DEBUG: M1 sensors found
+2022/07/02 (23:57:13) | DEBUG: Writing new config file
+2022/07/02 (23:57:13) | INFO: Quitting! Runtime: 00:43:26
+
+2022/07/02 (23:57:27) | ===> btop++ v.1.2.7
+2022/07/02 (23:57:27) | INFO: Logger set to DEBUG
+2022/07/02 (23:57:27) | DEBUG: Using locale tr_TR.UTF-8
+2022/07/02 (23:57:27) | INFO: Running on /dev/ttys011
+2022/07/02 (23:57:27) | DEBUG: get_sensors(): show_coretemp=1 check_temp=1
+2022/07/02 (23:57:27) | DEBUG: M1 sensors found

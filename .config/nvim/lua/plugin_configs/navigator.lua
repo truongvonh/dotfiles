@@ -5,7 +5,7 @@ if not status_ok then
 end
 
 navigator.setup({
-	debug = true, -- log output, set to true and log path: ~/.cache/nvim/gh.log
+	debug = false, -- log output, set to true and log path: ~/.cache/nvim/gh.log
 	width = 0.75, -- max width ratio (number of cols for the floating window) / (window width)
 	height = 0.3, -- max list window height, 0.3 by default
 	preview_height = 0.35, -- max height of preview windows
@@ -31,8 +31,10 @@ navigator.setup({
 		code_action = { enable = true, sign = true, sign_priority = 40, virtual_text = true },
 		code_lens_action = { enable = true, sign = true, sign_priority = 40, virtual_text = true },
 		--format_on_save = true, -- set to false to disable lsp code format on save (if you are using prettier/efm/formater etc)
-		--disable_format_cap = {"sqls", "sumneko_lua", "gopls"},  -- a list of lsp disable format capacity (e.g. if you using efm or vim-codeformat etc), empty {} by default
-		--disable_lsp = {'pylsd', 'sqlls'}, -- a list of lsp server disabled for your project, e.g. denols and tsserver you may
+		disable_format_cap = { "tsserver", "jsonls" },
+		-- a list of lsp disable format capacity (e.g. if you using efm or vim-codeformat etc), empty {} by default
+		disable_lsp = { 'denols' },
+		-- a list of lsp server disabled for your project, e.g. denols and tsserver you may
 		-- only want to enable one lsp server
 		-- to disable all default config and use your own lsp setup set
 		-- disable_lsp = 'all'
