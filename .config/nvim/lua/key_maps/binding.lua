@@ -13,21 +13,31 @@ key_map("n", "j", "<Plug>(accelerated_jk_gj)")
 key_map("n", "k", "<Plug>(accelerated_jk_gk)")
 key_map("n", "<C-s>", ":w!<CR>", { silent = true })
 key_map("n", "zz", "<Cmd>q<CR>", { silent = true })
-key_map("n", "nr", "<Cmd>luafile %<CR>")
+key_map("n", "<space>nr", "<Cmd>luafile %<CR>")
 key_map("n", "Be", "<Cmd>b#<CR>") --Back to current file
 
 key_map("n", "<A-S-Left>", "<C-W>2<") --Back to current file
 key_map("n", "<A-S-Right>", "<C-W>2>") --Back to current file
 key_map("n", "<A-S-Up>", "<C-W>2+") --Back to current file
 key_map("n", "<A-S-Down>", "<C-W>2-") --Back to current file
+--key_map("n", "<A-S-Down>", "<C-W>2-") --Back to current file
 
 
 --" ============================ "
 --" Telescope mapping
 --" ============================ "
 key_map("n", "ff", ":Telescope find_files hidden=true<CR>")
-key_map("n", "fb", ":Telescope buffers<CR>")
+key_map("n", "fb", ":Telescope buffers theme=dropdown<CR>")
+key_map("n", "fp", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
 key_map("n", "fg", ":Telescope live_grep<CR>")
+key_map("n", "tr", "<Cmd>Telescope npm scripts theme=dropdown<CR>", { silent = true }) -- Open current npm scripts
+key_map("n", "<space>cl", "<Cmd>Telescope colorscheme theme=dropdown<CR>", { silent = true }) -- Open current npm scripts
+
+--" ============================ "
+--" Floaterm mapping
+--" ============================ "
+key_map("n", "<space>ft", "<Cmd>FloatermToggle<CR>")
+
 
 
 --" ============================ "
@@ -47,7 +57,7 @@ key_map("n", "<C-g>", ":LazyGit<CR>", { silent = true })
 --" ============================ "
 --" Startify mapping
 --" ============================ "
-key_map("n", "<C-q>", "<Cmd>SClose<CR>")
+--key_map("n", "<C-q>", "<Cmd>jClose<CR>")
 
 
 --" ============================ "
@@ -67,7 +77,7 @@ key_map("i", "<cr>", [[pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"]], { silent = tr
 --" ============================ "
 --" Whichkey  mapping
 --" ============================ "
-key_map("n", "mk", "<Cmd>WhichKey<CR>")
+key_map("n", "wk", "<Cmd>WhichKey<CR>")
 
 
 --" ============================ "
@@ -91,6 +101,12 @@ key_map("n", "Ef", "<Cmd>EslintFixAll<CR>")
 --" ============================ "
 --" Debugger config binding
 --" ============================ "
-key_map("n", "<space>db", "<cmd>lua attach_debugger()<CR>", {silent = true}) --start nvim debugger
-key_map("n", "<space>tp", "<cmd>DapToggleBreakpoint<CR>", {silent = true}) --start nvim debugger
-key_map("n", "<space>lp", "<cmd>lua log_breakpoint_result()<CR>", {silent = true}) --log info of a breakpoint
+key_map("n", "<space>db", "<cmd>lua attach_debugger()<CR>", { silent = true }) --start nvim debugger
+key_map("n", "<space>tp", "<cmd>DapToggleBreakpoint<CR>", { silent = true }) --start nvim debugger
+key_map("n", "<space>lp", "<cmd>lua log_breakpoint_result()<CR>", { silent = true }) --log info of a breakpoint
+key_map("n", "<space>dr", "<cmd>lua require('dap').clear_breakpoints()<CR>", { silent = false }) --remove all breakpoints
+
+--" ============================ "
+--" VIMStartify config binding
+--" ============================ "
+key_map("n", "<C-q>", "<cmd>SClose<CR>", { silent = true }) --log info of a breakpoint

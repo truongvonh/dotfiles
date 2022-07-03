@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["accelerated-jk"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/accelerated-jk",
@@ -89,40 +94,60 @@ _G.packer_plugins = {
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  ["coc-jest"] = {
+  ["cmp-buffer"] = {
     loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/coc-jest",
-    url = "https://github.com/neoclide/coc-jest"
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
   },
-  ["coc.nvim"] = {
+  ["cmp-cmdline"] = {
     loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
   },
-  ["dracula.nvim"] = {
+  ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["editorconfig-vim"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/editorconfig-vim",
     url = "https://github.com/editorconfig/editorconfig-vim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["glow.nvim"] = {
-    loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/glow.nvim",
-    url = "https://github.com/ellisonleao/glow.nvim"
-  },
   gruvbox = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
+  },
+  ["guihua.lua"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/guihua.lua",
+    url = "https://github.com/ray-x/guihua.lua"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -134,15 +159,27 @@ _G.packer_plugins = {
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["julia-vim"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/julia-vim",
+    url = "https://github.com/JuliaEditorSupport/julia-vim"
+  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
   },
-  ["minimap.vim"] = {
+  ["markdown-preview.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  ["navigator.lua"] = {
     loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/minimap.vim",
-    url = "https://github.com/wfxr/minimap.vim"
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/navigator.lua",
+    url = "https://github.com/ray-x/navigator.lua"
   },
   nerdcommenter = {
     loaded = true,
@@ -164,15 +201,35 @@ _G.packer_plugins = {
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
     url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lsp-ts-utils"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils",
+    url = "https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -183,11 +240,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
-  },
-  ["nvim-spectre"] = {
-    loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-spectre",
-    url = "https://github.com/windwp/nvim-spectre"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -204,6 +256,11 @@ _G.packer_plugins = {
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/nvim-yarp",
     url = "https://github.com/roxma/nvim-yarp"
   },
+  ["onenord.nvim"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/onenord.nvim",
+    url = "https://github.com/rmehri01/onenord.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -219,10 +276,20 @@ _G.packer_plugins = {
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
+  ["starry.nvim"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/starry.nvim",
+    url = "https://github.com/ray-x/starry.nvim"
+  },
   ["telescope-media-files.nvim"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",
     url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
+  },
+  ["telescope-npm.nvim"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/telescope-npm.nvim",
+    url = "https://github.com/elianiva/telescope-npm.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -234,15 +301,20 @@ _G.packer_plugins = {
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
-  ["tokyonight.nvim"] = {
+  ["vCoolor.vim"] = {
     loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vCoolor.vim",
+    url = "https://github.com/KabbAmine/vCoolor.vim"
   },
   ["vim-css-color"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-css-color",
     url = "https://github.com/ap/vim-css-color"
+  },
+  ["vim-deus"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-deus",
+    url = "https://github.com/ajmwagar/vim-deus"
   },
   ["vim-devicons"] = {
     loaded = true,
@@ -252,17 +324,12 @@ _G.packer_plugins = {
   ["vim-floaterm"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-floaterm",
-    url = "https://github.com/voldikssr/vim-floaterm"
+    url = "https://github.com/voldikss/vim-floaterm"
   },
   ["vim-g"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-g",
     url = "https://github.com/szw/vim-g"
-  },
-  ["vim-go"] = {
-    loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-go",
-    url = "https://github.com/fatih/vim-go"
   },
   ["vim-hug-neovim-rpc"] = {
     loaded = true,
@@ -274,15 +341,20 @@ _G.packer_plugins = {
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/plasticboy/vim-markdown"
   },
-  ["vim-moonfly-colors"] = {
+  ["vim-multiple-cursors"] = {
     loaded = true,
-    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
-    url = "https://github.com/bluz71/vim-moonfly-colors"
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
+    url = "https://github.com/terryma/vim-multiple-cursors"
   },
   ["vim-polyglot"] = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
+  },
+  ["vim-smooth-scroll"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-smooth-scroll",
+    url = "https://github.com/terryma/vim-smooth-scroll"
   },
   ["vim-startify"] = {
     loaded = true,
@@ -293,6 +365,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/vim-test/vim-test"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/Users/vonhattruong/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   },
   ["which-key.nvim"] = {
     loaded = true,
@@ -307,6 +389,17 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Setup for: markdown-preview.nvim
+time([[Setup for markdown-preview.nvim]], true)
+try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
+time([[Setup for markdown-preview.nvim]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 if should_profile then save_profiles() end
 
 end)

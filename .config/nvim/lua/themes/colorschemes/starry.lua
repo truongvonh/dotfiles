@@ -1,3 +1,3 @@
-vim.cmd('colorscheme starry')
+vim.cmd('colorscheme mariana')
 
-vim.g.starry_style = 'dracula_blood'
+--vim.g.starry_style = 'dracula_blood'

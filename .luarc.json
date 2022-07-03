@@ -1,7 +1,9 @@
 {
     "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
     "Lua.diagnostics.disable": [
-        "lowercase-global"
+        "lowercase-global",
+        "undefined-doc-name",
+        "undefined-field"
     ],
     "Lua.diagnostics.globals": [
         "se",
@@ -10,7 +12,8 @@
         "filetypes",
         "find_cmd",
         "attach",
-        "attachToRemote"
+        "attachToRemote",
+        "vim"
     ],
     "Lua.runtime.version": "LuaJIT",
     "Lua.workspace.checkThirdParty": false,

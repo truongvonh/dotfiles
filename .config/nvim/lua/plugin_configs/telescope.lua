@@ -4,12 +4,17 @@ if not status_ok then
 	return
 end
 
+telescope.load_extension('media_files')
+telescope.load_extension('live_grep_args')
+
 telescope.setup {
+	preview_cutoff = 1,
+	layout_strategy = "flex",
 	defaults = {
 		file_sorter = require("telescope.sorters").get_fzy_sorter,
 		prompt_prefix = "$ ",
 		color_devicons = true,
-		previewer = true,
+		--previewer = true,
 
 		file_previewer = require("telescope.previewers").vim_buffer_cat.new,
 		grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
@@ -42,6 +47,3 @@ telescope.setup {
 		},
 	}
 }
-
-
-telescope.load_extension('media_files')

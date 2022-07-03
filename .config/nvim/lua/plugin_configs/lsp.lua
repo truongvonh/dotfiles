@@ -4,6 +4,8 @@ if not status_ok then
 	return
 end
 
+
+
 local on_attach = function(client, bufnr)
 	vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -36,14 +38,18 @@ local on_attach = function(client, bufnr)
 	})
 end
 
-local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'eslint', 'quick_lint_js', 'sumneko_lua' }
+--local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'eslint', 'quick_lint_js', 'sumneko_lua' }
+local servers = { 'pyright', 'rust_analyzer', 'eslint', 'quick_lint_js', 'sumneko_lua', 'tailwindcss' }
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+
 for type, icon in pairs(signs) do
 	local hl = "DiagnosticSign" .. type
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
+
 for _, lsp in pairs(servers) do
 	lspconfig[lsp].setup {
+		require "lsp_signature".on_attach(),
 		on_attach = on_attach,
 		flags = {
 			debounce_text_changes = 50,
@@ -51,10 +57,11 @@ for _, lsp in pairs(servers) do
 	}
 end
 
-
 lspconfig.tsserver.setup({
 	capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
 	on_attach = function(client)
+		require "lsp_signature".on_attach()
 		client.resolved_capabilities.document_formatting = false
+		client.resolved_capabilities.document_range_formatting = false
 	end,
 })

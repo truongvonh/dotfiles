@@ -68,7 +68,11 @@ dap.adapters.node2 = {
 	args = { os.getenv('HOME') .. '/vscode-node-debug2/out/src/nodeDebug.js' },
 }
 
-dap.configurations.typescript = {
+
+local languages_server = { 'typescript', 'javascript' }
+
+for _, language in pairs(languages_server) do
+	dap.configurations[language] = {
 	{
 		name = 'Launch',
 		type = 'node2',
@@ -88,6 +92,7 @@ dap.configurations.typescript = {
 		request = 'attach',
 		processId = require 'dap.utils'.pick_process,
 	},
-}
+}end
+
 
 dap_virtual_text.setup()

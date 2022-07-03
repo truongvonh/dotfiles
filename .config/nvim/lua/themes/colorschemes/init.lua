@@ -9,8 +9,10 @@ vim.g.indent_blankline_filetype_exclude = {
 	"Trouble",
 }
 
-vim.g.startify_session_autoload = 0
+vim.g.startify_session_autoload = 1
 
-require('themes.colorschemes.gruvbox')
+--require('themes.kolorschemes.gruvbox')
 --require('themes.colorschemes.one_nord')
 --require('themes.colorschemes.starry')
+--
+vim.cmd('colorscheme mariana')
