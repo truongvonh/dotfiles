@@ -11,8 +11,12 @@ vim.g.indent_blankline_filetype_exclude = {
 
 vim.g.startify_session_autoload = 1
 
---require('themes.kolorschemes.gruvbox')
+--require('themes.colorschemes.gruvbox')
 --require('themes.colorschemes.one_nord')
 --require('themes.colorschemes.starry')
 --
-vim.cmd('colorscheme mariana')
+vim.cmd('colorscheme earlysummer')
+--vim.cmd([[
+--let g:airline_theme = 'everforest'
+--let g:everforest_background = "hard"
+--]])

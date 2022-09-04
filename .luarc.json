@@ -3,7 +3,8 @@
     "Lua.diagnostics.disable": [
         "lowercase-global",
         "undefined-doc-name",
-        "undefined-field"
+        "undefined-field",
+        "unused-local"
     ],
     "Lua.diagnostics.globals": [
         "se",
@@ -13,7 +14,11 @@
         "find_cmd",
         "attach",
         "attachToRemote",
-        "vim"
+        "vim",
+        "null_ls",
+        "status_ok",
+        "buf_set_keymap",
+        "buf_set_option"
     ],
     "Lua.runtime.version": "LuaJIT",
     "Lua.workspace.checkThirdParty": false,
