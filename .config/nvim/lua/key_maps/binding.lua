@@ -16,11 +16,14 @@ key_map("n", "zz", "<Cmd>q<CR>", { silent = true })
 key_map("n", "<space>nr", "<Cmd>luafile %<CR>")
 key_map("n", "Be", "<Cmd>b#<CR>") --Back to current file
 
-key_map("n", "<A-S-Left>", "<C-W>2<") --Back to current file
-key_map("n", "<A-S-Right>", "<C-W>2>") --Back to current file
-key_map("n", "<A-S-Up>", "<C-W>2+") --Back to current file
-key_map("n", "<A-S-Down>", "<C-W>2-") --Back to current file
+--key_map("n", "<A-S-Left>", "<C-W>2<") --Back to current file
+--key_map("n", "<A-S-Right>", "<C-W>2>") --Back to current file
+--key_map("n", "<A-S-Up>", "<C-W>2+") --Back to current file
 --key_map("n", "<A-S-Down>", "<C-W>2-") --Back to current file
+key_map("n", "<C-Left>", "<C-W>2<") --Back to current file
+key_map("n", "<C-Right>", "<C-W>2>") --Back to current file
+key_map("n", "<C-Up>", "<C-W>2+") --Back to current file
+key_map("n", "<C-Down>", "<C-W>2-") --Back to current file
 
 
 --" ============================ "
@@ -63,8 +66,8 @@ key_map("n", "<C-g>", ":LazyGit<CR>", { silent = true })
 --" ============================ "
 --" Nerdtree mapping
 --" ============================ "
-key_map("n", "<C-f>", ":NERDTreeFind<CR>")
-key_map("n", "<C-t>", ":NERDTreeToggle<CR>")
+key_map("n", "<C-f>", ":NvimTreeFindFile<CR>")
+key_map("n", "<C-t>", ":NvimTreeToggle<CR>")
 key_map("n", "mm", "<plug>NERDCommenterToggle")
 key_map("v", "mm", "<plug>NERDCommenterToggle")
 

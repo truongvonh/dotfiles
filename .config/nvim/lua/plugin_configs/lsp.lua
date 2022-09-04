@@ -38,8 +38,9 @@ local on_attach = function(client, bufnr)
 	})
 end
 
---local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'eslint', 'quick_lint_js', 'sumneko_lua' }
-local servers = { 'pyright', 'rust_analyzer', 'eslint', 'quick_lint_js', 'sumneko_lua', 'tailwindcss' }
+--local servers = { 'pyright', 'rust_analyzer', 'eslint', 'quick_lint_js', 'sumneko_lua', 'tailwindcss', 'gopls', 'golangci_lint_ls' }
+--local servers = { 'pyright', 'rust_analyzer', 'eslint', 'quick_lint_js', 'sumneko_lua', 'tailwindcss', 'gopls' }
+local servers = { 'pyright', 'rust_analyzer', 'eslint', 'quick_lint_js', 'sumneko_lua', 'gopls' }
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 
 for type, icon in pairs(signs) do
@@ -49,6 +50,7 @@ end
 
 for _, lsp in pairs(servers) do
 	lspconfig[lsp].setup {
+		cmd = { "gopls", "--remote=auto" },
 		require "lsp_signature".on_attach(),
 		on_attach = on_attach,
 		flags = {
@@ -59,6 +61,7 @@ end
 
 lspconfig.tsserver.setup({
 	capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+
 	on_attach = function(client)
 		require "lsp_signature".on_attach()
 		client.resolved_capabilities.document_formatting = false

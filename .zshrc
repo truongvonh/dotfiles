@@ -10,7 +10,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
-export PATH="/usr/local/opt/python/libexec/bin:$PATH,/Applications/Julia-1.7.app/Contents/Resources/julia/bin/:${PATH}"
+export GOBIN="$HOME/go/bin"
+export GOPATH="$HOME/go"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH,
+						 /Applications/Julia-1.7.app/Contents/Resources/julia/bin/:${PATH},
+						 $PATH:$GOBIN"
+#export PATH="$GOPATH/bin:$PATH"
+
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=tr_TR.UTF-8
 export BAT_THEME="Dracula"
@@ -87,6 +93,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+	zsh-syntax-highlighting
 	zsh-vi-mode
 	zsh-autosuggestions
 )

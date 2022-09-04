@@ -16,20 +16,26 @@ require('packer').startup({
 		use 'rmehri01/onenord.nvim'
 		use 'ray-x/starry.nvim'
 		use 'ajmwagar/vim-deus'
+		use 'sainnhe/everforest'
 
 		--" Utilities
 		use 'sheerun/vim-polyglot'
+		use 'tpope/vim-surround'
 		use 'jiangmiao/auto-pairs'
 		use 'ap/vim-css-kolor'
-		use 'preservim/nerdtree'
+		--use 'preservim/nerdtree'
+		use 'kyazdani42/nvim-tree.lua'
 		use 'scrooloose/nerdcommenter'
 		use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 		use 'jose-elias-alvarez/null-ls.nvim'
 		use 'neovim/nvim-lspconfig'
+		use 'folke/trouble.nvim'
 		use {
 			"ray-x/lsp_signature.nvim",
 		}
+		-- badd
 		use 'williamboman/nvim-lsp-installer'
+		use 'lewis6991/spellsitter.nvim'
 		use 'lewis6991/impatient.nvim'
 		use 'mhinz/vim-startify'
 		use 'folke/which-key.nvim'
@@ -53,9 +59,12 @@ require('packer').startup({
 		use 'hrsh7th/cmp-path'
 		use 'hrsh7th/cmp-cmdline'
 		use 'hrsh7th/nvim-cmp'
-
 		use 'hrsh7th/cmp-vsnip'
 		use 'hrsh7th/vim-vsnip'
+
+		-- nvim golang config --
+		use 'fatih/vim-go'
+		--use 'ray-x/go.nvim'
 
 		--" For luasnip users.
 		use 'L3MON4D3/LuaSnip'
@@ -102,6 +111,9 @@ require('packer').startup({
 			setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
 			ft = { "markdown" },
 		})
+
+		-- @TODO need remove later
+		use({ 'shuntaka9576/preview-swagger.nvim', run = "yarn install" })
 	end,
 	config = { max_jobs = 10 },
 })

@@ -141,7 +141,7 @@ cmp.setup({
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 
-local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'eslint', 'quick_lint_js', 'sumneko_lua' }
+local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'eslint', 'quick_lint_js', 'sumneko_lua', 'gopls' }
 for _, lsp in pairs(servers) do
 	require('lspconfig')[lsp].setup {
 		capabilities = capabilities
